@@ -1,5 +1,16 @@
 # mysql_syncer
 
+The goal is a tool to sync data in one mysql table into another incrementally with a row by row diff. You could use mysqldump but that isn't incremental. 
+Incremental syncs are useful if you are tracking binlog row change events closely or want to avoid amplification when data doesn't change frequently.
+
+### Contributors
+
+- NOCD Team
+- Jason (https://github.com/fulghum) from Dolt (https://www.dolthub.com/)
+
+### Testing
+
+
 Run the following to seed the data in your local mysql:
 
 ```
